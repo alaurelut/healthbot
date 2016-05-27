@@ -1,0 +1,63 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+      <div class="panel panel-orange panel-widget">
+        <div class="row no-padding">
+          <div class="col-sm-3 col-lg-5 widget-left">
+            <svg class="glyph stroked drop"><use xlink:href="#stroked-drop"></use></svg>
+          </div>
+          <div class="col-sm-9 col-lg-7 widget-right">
+            <div class="large">{{user.diastolicBloodPressure}}</div>
+            <div class="text-muted">Pression Sanguine Diastolic</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+      <div class="panel panel-teal panel-widget">
+        <div class="row no-padding">
+          <div class="col-sm-3 col-lg-5 widget-left">
+            <svg class="glyph stroked smudge"><use xlink:href="#stroked-smudge"></use></svg>
+          </div>
+          <div class="col-sm-9 col-lg-7 widget-right">
+            <div class="large">{{user.sistolicBloodPressure}}</div>
+            <div class="text-muted">Pression Sanguine Systolique</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+      <div class="panel panel-red panel-widget">
+        <div class="row no-padding">
+          <div class="col-sm-3 col-lg-5 widget-left">
+            <svg class="glyph stroked heart"><use xlink:href="#stroked-heart"></use></svg>
+          </div>
+          <div class="col-sm-9 col-lg-7 widget-right">
+            <div class="large">{{user.heartPulse}}</div>
+            <div class="text-muted">Rythme Cardiaque</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <div class="panel panel-default">
+        <div class="panel-body easypiechart-panel">
+          <h4>Weight:</h4>
+          <div class="easypiechart" id="easypiechart-blue" data-percent="92"><span class="percent">{{user.weight}}kg</span>
+          <canvas height="220" width="220" style="height: 110px; width: 110px;"></canvas></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <div class="panel panel-default">
+        <div class="panel-body easypiechart-panel">
+          <h4>Height:</h4>
+          <div class="easypiechart" id="easypiechart-orange" data-percent="65"><span class="percent">{{user.height}}m</span>
+          <canvas height="220" width="220" style="height: 110px; width: 110px;"></canvas></div>
+        </div>
+      </div>
+    </div>
+  
+  </ion-content>
+</ion-view>
